@@ -1,27 +1,22 @@
-
 version: '3.8'
 services:
-  satya:
-    image: ratna22/appsatya:latest
+  whatsapp:
+    image: ratna22/newwhatsapp:latest
     ports:
-      - "85:80"
+      - "81:80"
     deploy:
       replicas: 3
-  ratna:
-    image: ratna22/appratna:latest
+  instagram:
+    image: ratna22/newinstagram:latest
     ports:
-      - "86:80"
+      - "82:80"
     deploy:
       replicas: 3
-  viond:
-    image: ratna22/appvinod:latest
+  facebook:
+    image: ratna22/newfacebook:latest
     ports:
-      - "87:80"
+      - "83:80"
     deploy:
       replicas: 3
-  ammu:
-    image: ratna22/appammu:latest
-    ports:
-      - "88:80"
-    deploy:
-      replicas: 3
+
+
